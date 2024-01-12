@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41b1b667-c2de-479b-b2be-b63c3be3dc0f" name="Changes" comment="ammended typo">
-      <change afterPath="$PROJECT_DIR$/docker-compose-dev.yml" afterDir="false" />
+    <list default="true" id="41b1b667-c2de-479b-b2be-b63c3be3dc0f" name="Changes" comment="Added deploy script to .travis.yml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +51,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1705053776783</updated>
-      <workItem from="1705053782445" duration="9409000" />
+      <workItem from="1705053782445" duration="11351000" />
     </task>
     <task id="LOCAL-00001" summary="Made change to .travis.yml to push images to Docker Hub">
       <option name="closed" value="true" />
@@ -72,7 +69,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705063947544</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added deploy script to .travis.yml">
+      <option name="closed" value="true" />
+      <created>1705078639087</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1705078639089</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -81,6 +86,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Made change to .travis.yml to push images to Docker Hub" />
     <MESSAGE value="ammended typo" />
-    <option name="LAST_COMMIT_MESSAGE" value="ammended typo" />
+    <MESSAGE value="Added deploy script to .travis.yml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added deploy script to .travis.yml" />
   </component>
 </project>
