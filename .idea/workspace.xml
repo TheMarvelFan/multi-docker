@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41b1b667-c2de-479b-b2be-b63c3be3dc0f" name="Changes" comment="Added deploy script to .travis.yml">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="41b1b667-c2de-479b-b2be-b63c3be3dc0f" name="Changes" comment="Made change to key configuration to prevent errors." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,7 +49,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1705053776783</updated>
-      <workItem from="1705053782445" duration="11351000" />
+      <workItem from="1705053782445" duration="12214000" />
     </task>
     <task id="LOCAL-00001" summary="Made change to .travis.yml to push images to Docker Hub">
       <option name="closed" value="true" />
@@ -77,7 +75,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705078639089</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Made change to key configuration to prevent errors.">
+      <option name="closed" value="true" />
+      <created>1705083886383</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1705083886383</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -87,6 +93,7 @@
     <MESSAGE value="Made change to .travis.yml to push images to Docker Hub" />
     <MESSAGE value="ammended typo" />
     <MESSAGE value="Added deploy script to .travis.yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added deploy script to .travis.yml" />
+    <MESSAGE value="Made change to key configuration to prevent errors." />
+    <option name="LAST_COMMIT_MESSAGE" value="Made change to key configuration to prevent errors." />
   </component>
 </project>
