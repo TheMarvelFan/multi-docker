@@ -14,3 +14,10 @@ after_success:
   - docker build -t themarvelfan616/multi-nginx ./nginx
   - docker build -t themarvelfan616/multi-server ./server
   - docker build -t themarvelfan616/multi-worker ./worker
+  # To push images to docker hub, login to Docker cli is req
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+  # After that can they be pushed
+  - docker push themarvelfan616/multi-clientf
+  - docker push themarvelfan616/multi-nginx
+  - docker push themarvelfan616/multi-server
+  - docker push themarvelfan616/multi-worker
