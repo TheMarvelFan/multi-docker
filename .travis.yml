@@ -21,3 +21,28 @@ after_success:
   - docker push themarvelfan616/multi-nginx
   - docker push themarvelfan616/multi-server
   - docker push themarvelfan616/multi-worker
+
+# AWS elastic beanstalk does not know how to run containers, this it used Elastic Container Service (ECS) to do so
+# For telling ECS what to do, we need Dockerrun.aws.json file (automatically interpreted)
+# These comments are for the Dockerrun.aws.json file as json syntax does not allow comments
+# Container definitions is the same as services (containers) in docker-compose
+# The hostname of the container need not be the same as image name (or anything), but it is good convention
+# The name of the image to be pulled does not mention Docker hub anywhere as it is automatically interpreted
+# The essential option if set "true" means that if the current container ever crashes, all the other containers specified in its Dockerrun.aws.json
+# file will also crash. This can be done for servers such as nginx, as no routing can be performed if it crashes anyway
+# At least one container in the list of containers specified in the Dockerrun.aws.json file must be essential: true
+# The links section specifies that the current container (in which links are being defined) is linked to which containers
+# This is a string array, and the names of links mentioned in this array have to be the same as the NAMES (not hostnames) of other containers
+
+deploy:
+  provider: elasticbeanstalk
+  region: 'ap-south-1'
+  app: 'multi-docker'
+  env: 'Multi-docker-env'
+  bucket_name: 'elasticbeanstalk-ap-south-1-381491946362'
+  bucket_path: 'docker-multi'
+  on:
+    branch: main
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key:
+    secure: $AWS_SECRET_KEY
